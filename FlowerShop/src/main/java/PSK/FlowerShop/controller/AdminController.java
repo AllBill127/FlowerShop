@@ -3,7 +3,6 @@ package PSK.FlowerShop.controller;
 import PSK.FlowerShop.entities.Admin;
 import PSK.FlowerShop.request.AdminRequest;
 import PSK.FlowerShop.service.AdminService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

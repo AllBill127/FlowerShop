@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Entity
 @Getter @Setter
 public class OrderItem {
@@ -12,5 +14,12 @@ public class OrderItem {
     private int id;
 
     @ManyToOne
+    private Order order;
+
+    @OneToOne
     private Product product;
+
+    private Integer quantity;
+
+    private BigDecimal price;
 }

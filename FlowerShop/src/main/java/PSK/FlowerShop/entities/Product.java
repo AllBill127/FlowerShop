@@ -12,7 +12,8 @@ import java.util.UUID;
 @Getter @Setter
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "uuid")
     private UUID id;
     @ManyToOne
     private Category category;

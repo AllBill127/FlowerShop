@@ -36,22 +36,6 @@ public class ProductController {
         }
     }
 
-//    @GetMapping("")
-//    public ResponseEntity<List<ProductDTO>> getProducts() {
-//        try {
-//            List<ProductDTO> productDTOs =  productService.getAllProducts();
-//            return ResponseEntity.ok(productDTOs);
-//        } catch (Exception e) {
-//            return ResponseEntity
-//                    .notFound()
-//                    .build();
-//        }
-//    }
-//
-//    // TODO: this endpoint should be inside categories
-//    //  as the full path should be '.../api/categories/{id}/products
-//    //  After moving @GetMapping needs fixing
-//    //  (should change to "{id}/products")
     @GetMapping("")
     public ResponseEntity<List<ProductDTO>> getProducts(
             @RequestParam(name = "categoryId", required = false) UUID id) {

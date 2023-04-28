@@ -16,7 +16,7 @@ public class Order {
     private int id;
     @OneToMany
     private List<OrderItem> orderItems;
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date createdAt;
     private BigDecimal totalPrice;
     private String status;

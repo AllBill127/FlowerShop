@@ -1,5 +1,6 @@
 package PSK.FlowerShop.controller;
 
+import PSK.FlowerShop.entities.Product;
 import PSK.FlowerShop.request.AddProductDTO;
 import PSK.FlowerShop.request.ProductDTO;
 import PSK.FlowerShop.service.ProductService;
@@ -9,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 
@@ -37,10 +39,10 @@ public class ProductController {
     }
 
     @GetMapping("")
-    public ResponseEntity<List<ProductDTO>> getProducts(
+    public ResponseEntity<List<Product>> getProducts(
             @RequestParam(name = "categoryId", required = false) UUID id) {
         try {
-            List<ProductDTO> productDTOs;
+            List<Product> productDTOs;
 
             if(id == null)
                 productDTOs = productService.getAllProducts();
@@ -56,10 +58,10 @@ public class ProductController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<ProductDTO> getProductById(@PathVariable UUID id) {
+    public ResponseEntity<Optional<Product>> getProductById(@PathVariable UUID id) {
         try {
-            ProductDTO productDTO =  productService.getProductById(id);
-            return ResponseEntity.ok(productDTO);
+            Optional<Product> product =  productService.getProductById(id);
+            return ResponseEntity.ok(product);
         } catch (Exception e) {
             return ResponseEntity
                     .notFound()
@@ -68,11 +70,14 @@ public class ProductController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<ProductDTO> updateProductById(@RequestBody AddProductDTO request,
-                                                        @PathVariable UUID id) {
+    public ResponseEntity updateProductById(@RequestBody AddProductDTO request,
+                                            @PathVariable UUID id) {
+        if (id != request.getId() ){
+            return ResponseEntity.badRequest().build();
+        }
         try {
             ProductDTO productDTO =  productService.updateProduct(id, request);
-            return ResponseEntity.ok(productDTO);
+            return ResponseEntity.ok().build();
         } catch (Exception e) {
             return ResponseEntity
                     .notFound()

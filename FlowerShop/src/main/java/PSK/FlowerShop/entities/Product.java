@@ -11,12 +11,12 @@ import java.util.UUID;
 @Entity
 @Getter @Setter
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(columnDefinition = "uuid")
     private UUID id;
-    @ManyToOne
-    private Category category;
+    private String category;
     @OneToMany
     private List<Review> reviews;
     private String name;

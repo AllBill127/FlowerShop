@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public class ProductDTO {
-    private Category category;
+    private String category;
     private List<Review> reviews;
     private String name;
     private String description;

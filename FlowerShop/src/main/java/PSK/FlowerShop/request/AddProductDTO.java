@@ -8,9 +8,11 @@ import java.util.UUID;
 
 @Getter @Setter
 public class AddProductDTO {
-    private UUID categoryId;
+    private UUID  id;
+    private String category;
     private String name;
     private String description;
     private BigDecimal price;
     private int quantity;
+    private String image;
 }

@@ -11,7 +11,7 @@ import java.util.UUID;
 @Getter @Setter
 public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @OneToMany
     private List<Product> products;

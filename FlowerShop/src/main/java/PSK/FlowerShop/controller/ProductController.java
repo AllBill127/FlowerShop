@@ -72,7 +72,8 @@ public class ProductController {
     @PutMapping("{id}")
     public ResponseEntity updateProductById(@RequestBody AddProductDTO request,
                                             @PathVariable UUID id) {
-        if (id != request.getId() ){
+
+        if (!id.equals(request.getId())){
             return ResponseEntity.badRequest().build();
         }
         try {

@@ -1,11 +1,17 @@
 package PSK.FlowerShop.controller;
 
+import PSK.FlowerShop.Validators.Validator;
+import PSK.FlowerShop.Validators.ValidatorException;
 import PSK.FlowerShop.entities.Order;
+import PSK.FlowerShop.request.OrderRequest;
 import PSK.FlowerShop.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/orders")
@@ -19,22 +25,35 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    public Order getOrderById(@PathVariable int id) {
+    public Order getOrderById(@PathVariable UUID id) {
         return orderService.getOrderById(id);
     }
 
     @PostMapping
-    public Order createOrder(@RequestBody Order order) {
-        return orderService.createOrder(order);
+    public ResponseEntity<String> createOrder(@RequestBody OrderRequest order) {
+
+        try {
+            Validator.ValidateOrderRequest(order);
+            orderService.createOrder(order);
+        } catch (ValidatorException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Unknown error: "+e.getMessage());
+        }
+        return ResponseEntity.status(HttpStatus.CREATED).body("Created");
     }
 
     @PutMapping("/{id}")
-    public Order updateOrder(@PathVariable int id, @RequestBody Order order) {
+    public Order updateOrder(@PathVariable UUID id, @RequestBody Order order) {
         return orderService.updateOrder(id, order);
+    }
+    @PostMapping  ("/{id}")
+    public Order changeOrderStatus(@PathVariable UUID id,  @RequestBody OrderRequest order) {
+        return orderService.changeOrderStatus(order.getId(), order.getStatus());
     }
 
     @DeleteMapping("/{id}")
-    public void deleteOrder(@PathVariable int id) {
+    public void deleteOrder(@PathVariable UUID id) {
         orderService.deleteOrder(id);
     }
 }

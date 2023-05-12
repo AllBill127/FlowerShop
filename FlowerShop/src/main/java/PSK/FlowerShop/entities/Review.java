@@ -10,7 +10,7 @@ import java.util.UUID;
 @Getter @Setter
 public class Review {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @ManyToOne
     private Product product;

@@ -88,8 +88,7 @@ public class ProductService {
         product.setCategory(productDTO.getCategory());
         product.setPrice(productDTO.getPrice());
         product.setQuantity(productDTO.getQuantity());
-
-        //product.setImage(productDTO.getImage());
+        product.setImage(productDTO.getImage());
 
         Product updatedProduct = productRepository.save(product);
         return modelMapper.map(updatedProduct, ProductDTO.class);

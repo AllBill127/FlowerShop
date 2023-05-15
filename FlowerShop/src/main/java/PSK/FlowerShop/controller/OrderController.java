@@ -34,13 +34,13 @@ public class OrderController {
 
         try {
             Validator.ValidateOrderRequest(order);
-            orderService.createOrder(order);
+            return ResponseEntity.status(HttpStatus.CREATED).body(orderService.createOrder(order).getId().toString());
         } catch (ValidatorException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Unknown error: "+e.getMessage());
         }
-        return ResponseEntity.status(HttpStatus.CREATED).body("Created");
+
     }
 
     @PutMapping("/{id}")

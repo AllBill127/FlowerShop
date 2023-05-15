@@ -4,6 +4,7 @@ import PSK.FlowerShop.Validators.Validator;
 import PSK.FlowerShop.Validators.ValidatorException;
 import PSK.FlowerShop.entities.Order;
 import PSK.FlowerShop.request.OrderRequest;
+import PSK.FlowerShop.service.EmailService;
 import PSK.FlowerShop.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,9 @@ import java.util.UUID;
 public class OrderController {
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private EmailService emailService;
+
 
     @GetMapping
     public List<Order> getAllOrders() {
@@ -34,6 +38,8 @@ public class OrderController {
 
         try {
             Validator.ValidateOrderRequest(order);
+            String orderID= orderService.createOrder(order).getId().toString();
+            emailService.sendMail(order.getEmail(),"Your order created",emailService.makeCreateOrderText(orderID));
             return ResponseEntity.status(HttpStatus.CREATED).body(orderService.createOrder(order).getId().toString());
         } catch (ValidatorException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());

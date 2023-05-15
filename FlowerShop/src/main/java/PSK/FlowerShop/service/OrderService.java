@@ -43,7 +43,7 @@ public class OrderService {
     }
     @Transactional
     public Order createOrder(OrderRequest orderRequest) throws ValidatorException {
-        Order order= new Order(orderRequest.getCreatedAt(),orderRequest.getTotalPrice(),orderRequest.getStatus(),orderRequest.getPhoneNumber(),orderRequest.getCustomerName(), orderRequest.getPaymentMethod(), orderRequest.getShippingAddress());
+        Order order= new Order(orderRequest.getCreatedAt(),orderRequest.getTotalPrice(),orderRequest.getStatus(),orderRequest.getPhoneNumber(),orderRequest.getCustomerName(), orderRequest.getPaymentMethod(), orderRequest.getShippingAddress(), orderRequest.getEmail());
 
         List<UUID> productIds = orderRequest.getOrderItems().stream()
                 .map(OrderItemRequest::getProduct)

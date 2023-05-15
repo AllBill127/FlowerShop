@@ -20,4 +20,5 @@ public class OrderRequest {
     private String customerName;
     private String paymentMethod;
     private String shippingAddress;
+    private String email;
 }

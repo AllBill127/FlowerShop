@@ -28,8 +28,10 @@ public class Order {
     private String customerName;
     private String paymentMethod;
     private String shippingAddress;
+    private String email;
 
-    public Order(Date createdAt, BigDecimal totalPrice, String status, String phoneNumber, String customerName, String paymentMethod, String shippingAddress) {
+
+    public Order(Date createdAt, BigDecimal totalPrice, String status, String phoneNumber, String customerName, String paymentMethod, String shippingAddress, String email) {
         this.createdAt = createdAt;
         this.totalPrice = totalPrice;
         this.status = status;
@@ -37,6 +39,7 @@ public class Order {
         this.customerName = customerName;
         this.paymentMethod = paymentMethod;
         this.shippingAddress = shippingAddress;
+        this.email = email;
         orderItems = new ArrayList<OrderItem>();
     }
 

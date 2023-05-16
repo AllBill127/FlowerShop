@@ -41,32 +41,35 @@ public class OrderService {
             throw new EntityNotFoundException("Order with id " + id + " not found");
         }
     }
+
     @Transactional
     public Order createOrder(OrderRequest orderRequest) throws ValidatorException {
-        Order order= new Order(orderRequest.getCreatedAt(),orderRequest.getTotalPrice(),orderRequest.getStatus(),orderRequest.getPhoneNumber(),orderRequest.getCustomerName(), orderRequest.getPaymentMethod(), orderRequest.getShippingAddress(), orderRequest.getEmail());
+        Order order = new Order(orderRequest.getCreatedAt(), orderRequest.getTotalPrice(), orderRequest.getStatus(), orderRequest.getPhoneNumber(), orderRequest.getCustomerName(), orderRequest.getPaymentMethod(), orderRequest.getShippingAddress(), orderRequest.getEmail());
 
         List<UUID> productIds = orderRequest.getOrderItems().stream()
                 .map(OrderItemRequest::getProduct)
                 .collect(Collectors.toList());
         List<Product> productList = productRepository.findAllById(productIds);
         List<OrderItem> orderItemList = new ArrayList<OrderItem>();
-        for (Product product: productList) {
+        for (Product product : productList) {
             OrderItemRequest orderItemRequest = orderRequest.getOrderItems().stream().filter(orderItem -> product.getId().equals(orderItem.getProduct())).findFirst().orElse(null);
-            if(orderItemRequest == null) throw new RuntimeException("Not exist id in orderItemRequest "+product.getId());
-            if(product.getQuantity() < orderItemRequest.getQuantity()) throw new RuntimeException("OrderItemRequest quantity too big "+product.getId());
-            product.setQuantity(product.getQuantity()- orderItemRequest.getQuantity());
-            OrderItem orderItem = new OrderItem(order,product,orderItemRequest.getQuantity(), orderItemRequest.getPrice());
+            if (orderItemRequest == null)
+                throw new RuntimeException("Not exist id in orderItemRequest " + product.getId());
+            if (product.getQuantity() < orderItemRequest.getQuantity())
+                throw new RuntimeException("OrderItemRequest quantity too big " + product.getId());
+            product.setQuantity(product.getQuantity() - orderItemRequest.getQuantity());
+            OrderItem orderItem = new OrderItem(order, product, orderItemRequest.getQuantity(), orderItemRequest.getPrice());
             orderItemList.add(orderItem);
             order.addOrderItem(orderItem);
         }
         productRepository.saveAll(productList);
-        order=orderRepository.save(order);
+        order = orderRepository.save(order);
         for (OrderItem orderItem : orderItemList) {
             orderItem.setOrder(order);
         }
         orderItemList = orderItemRepository.saveAll(orderItemList);
         System.out.println(orderItemList);
-        if(orderItemList.isEmpty()) throw new ValidatorException("No order items saved");
+        if (orderItemList.isEmpty()) throw new ValidatorException("No order items saved");
         return order;
     }
 
@@ -98,11 +101,19 @@ public class OrderService {
     public Order changeOrderStatus(UUID id, String status) {
         Optional<Order> orderOptional = orderRepository.findById(id);
         if (orderOptional.isPresent()) {
-            Order order= orderOptional.get();
+            Order order = orderOptional.get();
             order.setStatus(status);
             return orderRepository.save(order);
         } else {
             throw new EntityNotFoundException("Order with id " + id + " not found");
         }
+    }
+
+    public Optional<OrderItem> getOrderItem(UUID id) {
+        return orderItemRepository.findById(id);
+    }
+
+    public OrderItem updateOrderItem(OrderItem orderItem) {
+        return orderItemRepository.save(orderItem);
     }
 }

@@ -49,7 +49,7 @@ public class ProductService {
     public List<Product> getProductsByCategory(UUID id) throws Exception {
         Optional<Category> category = categoryRepository.findById(id);
 
-        if(!category.isPresent())
+        if (!category.isPresent())
             throw new Exception(String.format(
                     "Category with ID:{0} not found!",
                     id
@@ -62,7 +62,7 @@ public class ProductService {
     public Optional<Product> getProductById(UUID id) throws Exception {
         Optional<Product> product = productRepository.findById(id);
 
-        if(!product.isPresent())
+        if (!product.isPresent())
             throw new Exception(String.format(
                     "Product with ID:{0} not found!",
                     id
@@ -71,10 +71,14 @@ public class ProductService {
         return product;
     }
 
+    public Product updateProduct(Product product) {
+        return productRepository.save(product);
+    }
+
     public ProductDTO updateProduct(UUID id, AddProductDTO productDTO) throws Exception {
         Optional<Product> currentProduct = productRepository.findById(id);
 
-        if(!currentProduct.isPresent())
+        if (!currentProduct.isPresent())
             throw new Exception(String.format(
                     "Product to update with ID:{0} not found!",
                     id
@@ -97,7 +101,7 @@ public class ProductService {
     public void deleteProduct(UUID id) throws Exception {
         Optional<Product> product = productRepository.findById(id);
 
-        if(!product.isPresent())
+        if (!product.isPresent())
             throw new Exception(String.format(
                     "Product to delete with ID:{0} not found!",
                     id

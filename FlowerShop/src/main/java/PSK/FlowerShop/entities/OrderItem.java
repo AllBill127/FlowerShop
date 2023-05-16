@@ -10,7 +10,9 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 @Entity
-@Getter @Setter @ToString
+@Getter
+@Setter
+@ToString
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -27,6 +29,9 @@ public class OrderItem {
 
     private BigDecimal price;
 
+    @OneToOne
+    private Review review;
+
     public OrderItem(Order order, Product product, Integer quantity, BigDecimal price) {
         this.order = order;
         this.product = product;
@@ -36,4 +41,5 @@ public class OrderItem {
 
     public OrderItem() {
     }
+
 }

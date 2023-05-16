@@ -1,7 +1,11 @@
 package PSK.FlowerShop.controller;
 
+import PSK.FlowerShop.entities.OrderItem;
+import PSK.FlowerShop.entities.Product;
 import PSK.FlowerShop.entities.Review;
 import PSK.FlowerShop.request.ReviewRequest;
+import PSK.FlowerShop.service.OrderService;
+import PSK.FlowerShop.service.ProductService;
 import PSK.FlowerShop.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,16 +22,37 @@ public class ReviewController {
     @Autowired
     private ReviewService reviewService;
 
-    @PostMapping("/create")
-    public ResponseEntity<Review> createReview(@RequestBody ReviewRequest reviewRequest) {
-        Review review = new Review();
-        review.setDescription(reviewRequest.getDescription());
-        review.setReviewerName(reviewRequest.getReviewerName());
-        reviewService.createReview(review);
-        return new ResponseEntity<>(review, HttpStatus.CREATED);
+    @Autowired
+    private ProductService productService;
+
+    @Autowired
+    private OrderService orderService;
+
+    @PostMapping
+    public ResponseEntity<Review> createReview(@RequestBody ReviewRequest reviewRequest) throws Exception {
+        try {
+            Review review = new Review(reviewRequest.getReviewer(), reviewRequest.getComment(), reviewRequest.getRate());
+            Optional<OrderItem> orderItem = orderService.getOrderItem(UUID.fromString(reviewRequest.getOrderItemID()));
+            Optional<Product> product = productService.getProductById(UUID.fromString(reviewRequest.getProductID()));
+            if (product.isEmpty() || orderItem.isEmpty()) return ResponseEntity.badRequest().build();
+            review.setProduct(product.get());
+            review.setOrderItem(orderItem.get());
+            reviewService.createReview(review);
+            OrderItem orderItem_ = orderItem.get();
+            Product product_ = product.get();
+            orderItem_.setReview(review);
+            product_.setReview(review);
+            if (productService.updateProduct(product_) == null || orderService.updateOrderItem(orderItem_) == null) {
+                return ResponseEntity.badRequest().build();
+            }
+            return new ResponseEntity<>(review, HttpStatus.CREATED);
+        } catch (java.lang.NullPointerException ex) {
+            System.err.println(ex.getMessage());
+            return ResponseEntity.badRequest().build();
+        }
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteReview(@PathVariable UUID id) throws Exception {
         Optional<Review> review = reviewService.getReviewById(id);
         if (review == null) {
@@ -37,13 +62,12 @@ public class ReviewController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PutMapping("/review/update/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<ReviewRequest> updateCategory(@RequestBody ReviewRequest reviewRequest, @PathVariable UUID id) {
         try {
             ReviewRequest request = reviewService.updateReview(id, reviewRequest);
             return ResponseEntity.ok(request);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return ResponseEntity.notFound().build();
         }
     }

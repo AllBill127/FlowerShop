@@ -5,11 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Getter @Setter
+@Getter
+@Setter
 public class Product {
 
     @Id
@@ -24,4 +26,9 @@ public class Product {
     private BigDecimal price;
     private String image;
     private int quantity;
+
+    public void setReview(Review review) {
+        if (reviews == null) reviews = new ArrayList<Review>();
+        reviews.add(review);
+    }
 }

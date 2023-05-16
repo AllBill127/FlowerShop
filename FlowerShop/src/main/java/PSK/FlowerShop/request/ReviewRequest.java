@@ -7,7 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ReviewRequest {
-    private Product product;
-    private String reviewerName;
-    private String description;
+    private double rate;
+    private String comment;
+    private String productID;
+    private String orderItemID;
+    private String reviewer;
 }

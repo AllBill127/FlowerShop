@@ -41,8 +41,8 @@ public class JwtFilter extends OncePerRequestFilter {
     private boolean isEndpointAllowed(HttpServletRequest request) {
         String requestURI = request.getRequestURI();
         String requestMethod = request.getMethod();
-
-        if (requestURI.equals("/admin")) {
+        System.out.println(requestURI);
+        if (requestURI.startsWith("/admin")) {
             return true;
         }
 

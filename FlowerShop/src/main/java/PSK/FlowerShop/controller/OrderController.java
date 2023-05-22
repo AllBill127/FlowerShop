@@ -21,6 +21,8 @@ public class OrderController {
     private OrderService orderService;
     @Autowired
     private EmailService emailService;
+    @Autowired
+    private Validator<OrderRequest> validator;
 
 
     @GetMapping
@@ -37,7 +39,7 @@ public class OrderController {
     public ResponseEntity<String> createOrder(@RequestBody OrderRequest order) {
 
         try {
-            Validator.ValidateOrderRequest(order);
+            validator.validate(order);
             String orderID= orderService.createOrder(order).getId().toString();
             emailService.sendMail(order.getEmail(),"Your order created",emailService.makeCreateOrderText(orderID));
             return ResponseEntity.status(HttpStatus.CREATED).body(orderService.createOrder(order).getId().toString());

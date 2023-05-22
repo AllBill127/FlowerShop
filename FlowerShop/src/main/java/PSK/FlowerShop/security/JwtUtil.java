@@ -3,9 +3,11 @@ package PSK.FlowerShop.security;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.crypto.SecretKey;
 import java.util.Date;
 
 @Component
@@ -17,6 +19,8 @@ public class JwtUtil {
     @Value("${jwt.expiration}")
     private long expiration;
 
+    private final SecretKey secretKey = Keys.secretKeyFor(SignatureAlgorithm.HS512);
+
     public String generateToken(String email) {
         Date now = new Date();
         Date expiryDate = new Date(now.getTime() + expiration);
@@ -25,7 +29,7 @@ public class JwtUtil {
                 .setSubject(email)
                 .setIssuedAt(now)
                 .setExpiration(expiryDate)
-                .signWith(SignatureAlgorithm.HS512, secret)
+                .signWith(secretKey)
                 .compact();
     }
 
@@ -39,8 +43,9 @@ public class JwtUtil {
     }
 
     private Claims extractClaims(String token) {
-        return Jwts.parser()
-                .setSigningKey(secret)
+        return Jwts.parserBuilder()
+                .setSigningKey(secretKey)
+                .build()
                 .parseClaimsJws(token)
                 .getBody();
     }

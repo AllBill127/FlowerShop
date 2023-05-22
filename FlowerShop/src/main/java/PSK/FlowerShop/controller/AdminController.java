@@ -2,6 +2,7 @@ package PSK.FlowerShop.controller;
 
 import PSK.FlowerShop.entities.Admin;
 import PSK.FlowerShop.request.AdminRequest;
+import PSK.FlowerShop.security.JwtUtil;
 import PSK.FlowerShop.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,9 @@ import org.springframework.web.bind.annotation.*;
 public class AdminController {
 
     @Autowired
+    private JwtUtil jwtUtil;
+
+    @Autowired
     private AdminService adminService;
 
 
@@ -22,7 +26,8 @@ public class AdminController {
         String username = request.getUsername();
         String password = request.getPassword();
         if(adminService.findAdminByUsernameAndPassword(username, password) == null) return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Bad credentials.");
-        return ResponseEntity.status(HttpStatus.ACCEPTED).body("You are logged in!");
+        String token = jwtUtil.generateToken(request.getUsername());
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(token);
     }
 
     //For testing reasons-

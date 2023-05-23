@@ -51,7 +51,7 @@ public class OrderService {
         }
     }
 
-    @Transactional
+    @Transactional(rollbackOn = Exception.class)
     public Order createOrder(OrderRequest orderRequest) throws ValidatorException {
         Order order = new Order(orderRequest.getCreatedAt(), orderRequest.getTotalPrice(), orderRequest.getStatus(), orderRequest.getPhoneNumber(), orderRequest.getCustomerName(), orderRequest.getPaymentMethod(), orderRequest.getShippingAddress(), orderRequest.getEmail());
 

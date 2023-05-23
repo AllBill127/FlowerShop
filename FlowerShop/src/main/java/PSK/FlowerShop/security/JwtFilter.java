@@ -45,8 +45,19 @@ public class JwtFilter extends OncePerRequestFilter {
         if (requestURI.startsWith("/admin")) {
             return true;
         }
+        if (requestURI.startsWith("/orders") && requestMethod.equals("POST")) {
+            return true;
+        }
+        if (requestURI.startsWith("/orders") && (requestMethod.equals("GET") || requestMethod.equals("POST"))){
+            return true;
+        }
 
-
+        if (requestURI.startsWith("/products") && requestMethod.equals("GET")) {
+            return true;
+        }
+        if (requestURI.startsWith("/review")) {
+            return true;
+        }
         return false;
     }
 }

@@ -10,9 +10,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 
 @RestController
@@ -41,14 +44,47 @@ public class ProductController {
 
     @GetMapping("")
     public ResponseEntity<List<Product>> getProducts(
-            @RequestParam(name = "categoryId", required = false) UUID id) {
+            @RequestParam(name = "categoryId", required = false) UUID id,
+            @RequestParam(name = "minPrice", required = false) Double minPrice,
+            @RequestParam(name = "maxPrice", required = false) Double maxPrice,
+            @RequestParam(name = "inStock", required = false) Boolean inStock) {
         try {
-            List<Product> productDTOs;
+            List<Product> productDTOs = new ArrayList<>();
 
-            if(id == null)
+            // Apply filtering based on category
+            if (id != null) {
+                productDTOs = productDTOs.stream()
+                        .filter(product -> product.getCategory().equals(id))
+                        .collect(Collectors.toList());
+            } else {
                 productDTOs = productService.getAllProducts();
-            else
-                productDTOs = productService.getProductsByCategory(id);
+            }
+
+            // Apply filtering based on minimum price
+            if (minPrice != null) {
+                productDTOs = productDTOs.stream()
+                        .filter(product -> product.getPrice().doubleValue() >= minPrice)
+                        .collect(Collectors.toList());
+            }
+
+            // Apply filtering based on maximum price
+            if (maxPrice != null) {
+                productDTOs = productDTOs.stream()
+                        .filter(product -> product.getPrice().doubleValue() <= maxPrice)
+                        .collect(Collectors.toList());
+            }
+
+            // Apply filtering based on it being in stock
+            if (inStock != null) {
+                if(inStock == true)
+                    productDTOs = productDTOs.stream()
+                            .filter(product -> product.getQuantity() > 0)
+                            .collect(Collectors.toList());
+                else
+                    productDTOs = productDTOs.stream()
+                            .filter(product -> product.getQuantity() <= 0)
+                            .collect(Collectors.toList());
+            }
 
             return ResponseEntity.ok(productDTOs);
         } catch (Exception e) {

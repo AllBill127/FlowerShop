@@ -5,6 +5,7 @@ import PSK.FlowerShop.request.AddProductDTO;
 import PSK.FlowerShop.request.ProductDTO;
 import PSK.FlowerShop.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -98,5 +99,9 @@ public class ProductController {
                     .notFound()
                     .build();
         }
+    }
+    @ExceptionHandler(OptimisticLockingFailureException.class)
+    public ResponseEntity handleOptimisticLockingFailure(OptimisticLockingFailureException ex) {
+        return ResponseEntity.status(HttpStatus.CONFLICT).body("Resource has been modified by another transaction.");
     }
 }

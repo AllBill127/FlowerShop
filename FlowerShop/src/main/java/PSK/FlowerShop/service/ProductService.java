@@ -42,7 +42,7 @@ public class ProductService {
     }
 
     public List<Product> getAllProducts() {
-        List<Product> products = productRepository.findAll();
+        List<Product> products = productRepository.findByIsDeletedFalse();
         return products;
     }
 
@@ -106,7 +106,8 @@ public class ProductService {
                     "Product to delete with ID:{0} not found!",
                     id
             ));
-
-        productRepository.deleteById(id);
+        Product product1 = product.get();
+        product1.setDeleted(true);
+        productRepository.save(product1);
     }
 }

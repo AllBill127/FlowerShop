@@ -1,5 +1,6 @@
 package PSK.FlowerShop.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -26,6 +27,13 @@ public class Product {
     private BigDecimal price;
     private String image;
     private int quantity;
+    @JsonIgnore
+    @Version
+    private Integer version;
+    @JsonIgnore
+    @Column(name = "IS_DELETED")
+    private boolean isDeleted = false;
+
 
     public void setReview(Review review) {
         if (reviews == null) reviews = new ArrayList<Review>();

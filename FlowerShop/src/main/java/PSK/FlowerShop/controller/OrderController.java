@@ -46,7 +46,7 @@ public class OrderController {
             validator.validate(order);
             String orderID= orderService.createOrder(order).getId().toString();
             emailService.sendEmail(order.getEmail(),"Your order created", "Hello,\nWe would like to inform you that your order has been created.","http://localhost:3000/order/"+orderID);
-            return ResponseEntity.status(HttpStatus.CREATED).body(orderService.createOrder(order).getId().toString());
+            return ResponseEntity.status(HttpStatus.CREATED).body(orderID);
         } catch (ValidatorException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }catch (Exception e) {

@@ -77,7 +77,7 @@ public class OrderService {
             orderItem.setOrder(order);
         }
         orderItemList = orderItemRepository.saveAll(orderItemList);
-        System.out.println(orderItemList);
+
         if (orderItemList.isEmpty()) throw new ValidatorException("No order items saved");
         return order;
     }

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class EmailServiceDecorator implements EmailService {
 
     private EmailService emailService;
-    private Logger logger = LoggerFactory.getLogger(EmailServiceDecorator.class);
+    private static final Logger logger = LoggerFactory.getLogger(EmailServiceDecorator.class);
 
     public EmailServiceDecorator(EmailServiceImpl emailService) {
         this.emailService = emailService;

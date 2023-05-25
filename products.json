@@ -1,0 +1,134 @@
+{
+  "products":[
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef571",
+      "category": "gele",
+      "reviews": [],
+      "name": "Roze",
+      "description": "Labai graži rože.",
+      "price": 120,
+      "image": "/images/gele1.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef573",
+      "category": "gele",
+      "reviews": [],
+      "name": "Orchidėja",
+      "description": "Egzotiška orchidėja su išskirtinėmis formomis.",
+      "price": 150,
+      "image": "/images/gele2.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef574",
+      "category": "puokste",
+      "reviews": [],
+      "name": "Vasarinė puokštė",
+      "description": "Gaivios spalvos vasaros puokštė su įvairiomis gėlėmis.",
+      "price": 200,
+      "image": "/images/puokste.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef575",
+      "category": "puokste",
+      "reviews": [],
+      "name": "Rudens puokštė",
+      "description": "Rudens spalvų puokštė su šiltomis atspalviais.",
+      "price": 180,
+      "image": "/images/puokste.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef576",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Kalanchoe",
+      "description": "Maža, bet žavinga gėlė su spalvotais žiedais.",
+      "price": 70,
+      "image": "/images/gele3.jpg",
+      "quantity": 100
+    }
+,
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef577",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Spathiphyllum",
+      "description": "Elegantiška ir dekoratyvi gėlė su žalios lapų spalvos.",
+      "price": 90,
+      "image": "/images/gele4.jpg",
+      "quantity": 100
+    }
+    ,
+
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef578",
+      "category": "gele",
+      "reviews": [],
+      "name": "Violetė",
+      "description": "Maža, žaviai gėlė su mėlynais žiedlapiais.",
+      "price": 60,
+      "image": "/images/roze.jpg",
+      "quantity": 100
+    }
+,
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef579",
+      "category": "gele",
+      "reviews": [],
+      "name": "Lelija",
+      "description": "Išskirtinės grožio lelija su ypatingu aromatu.",
+      "price": 100,
+      "image": "/images/gele1.jpg",
+      "quantity": 100
+    }
+,
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef580",
+      "category": "puokste",
+      "reviews": [],
+      "name": "Pavasario puokštė",
+      "description": "Gyvos ir spalvingos pavasario gėlės sudaro šią puokštę.",
+      "price": 150,
+      "image": "/images/puokste.jpg",
+      "quantity": 100
+    }
+,
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef581",
+      "category": "puokste",
+      "reviews": [],
+      "name": "Žiemą žydintys augalai",
+      "description": "Puokštė su žiemą žydinčiais augalais, kurie suteiks šilumos šaltuoju metų laiku.",
+      "price": 180,
+      "image": "/images/puokste.jpg",
+      "quantity": 100
+    }
+,
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef582",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Gerbera",
+      "description": "Ryškių spalvų gerbera gėlė, kuri pridės džiaugsmo.",
+      "price": 80,
+      "image": "/images/gele2.jpg",
+      "quantity": 100
+    }
+,
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef583",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Hortenzija",
+      "description": "Gražių spalvų hortenzija su elegantiškomis žiedynų formomis.",
+      "price": 110,
+      "image": "/images/gele3.jpg",
+      "quantity": 100
+    }
+
+
+  ]
+}

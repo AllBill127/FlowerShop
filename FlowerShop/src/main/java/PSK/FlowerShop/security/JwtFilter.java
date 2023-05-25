@@ -60,6 +60,9 @@ public class JwtFilter extends OncePerRequestFilter {
         if (requestURI.startsWith("/review")) {
             return true;
         }
+        if (requestURI.startsWith("/seeder")) {
+            return true;
+        }
         return false;
     }
 }

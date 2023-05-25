@@ -34,6 +34,19 @@ public class Product {
     @Column(name = "IS_DELETED")
     private boolean isDeleted = false;
 
+    public Product() {
+    }
+
+    public Product(String name, String category, String image, double price, int quantity, String description) {
+        this.name = name;
+        this.category = name;
+        this.image = image;
+        this.price = BigDecimal.valueOf(price);
+        this.quantity = quantity;
+        this.description = description;
+        reviews = new ArrayList<>();
+    }
+
 
     public void setReview(Review review) {
         if (reviews == null) reviews = new ArrayList<Review>();

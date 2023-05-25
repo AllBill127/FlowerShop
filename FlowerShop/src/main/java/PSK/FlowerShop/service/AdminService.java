@@ -2,11 +2,12 @@ package PSK.FlowerShop.service;
 
 import PSK.FlowerShop.entities.Admin;
 import PSK.FlowerShop.repository.AdminRepository;
-import PSK.FlowerShop.request.AdminRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.RequestScope;
 
 @Service
+@RequestScope
 public class AdminService {
 
     @Autowired

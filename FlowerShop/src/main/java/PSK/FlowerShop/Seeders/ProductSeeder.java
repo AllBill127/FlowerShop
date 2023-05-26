@@ -47,7 +47,7 @@ public class ProductSeeder {
     public ResponseEntity<?> seedProducts() {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            File file = new File("products.json");
+            File file = new File("FlowerShop/products.json");
 
             JsonNode rootNode = objectMapper.readTree(file);
             JsonNode productsNode = rootNode.get("products");
@@ -72,6 +72,7 @@ public class ProductSeeder {
             productRepository.saveAll(products);
             return ResponseEntity.ok("Products seeded successfully.");
         } catch (IOException e) {
+            System.out.println(e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to seed products.");
         }
     }

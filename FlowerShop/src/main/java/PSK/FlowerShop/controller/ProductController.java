@@ -1,6 +1,7 @@
 package PSK.FlowerShop.controller;
 
 import PSK.FlowerShop.entities.Product;
+import PSK.FlowerShop.enums.FlowerType;
 import PSK.FlowerShop.request.AddProductDTO;
 import PSK.FlowerShop.request.ProductDTO;
 import PSK.FlowerShop.service.ProductService;
@@ -10,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -43,20 +43,21 @@ public class ProductController {
 
     @GetMapping("")
     public ResponseEntity<List<Product>> getProducts(
-            @RequestParam(name = "categoryId", required = false) UUID id,
+            @RequestParam(name = "categoryId", required = false) Integer categoryId,
             @RequestParam(name = "minPrice", required = false) Double minPrice,
             @RequestParam(name = "maxPrice", required = false) Double maxPrice,
             @RequestParam(name = "inStock", required = false) Boolean inStock) {
         try {
-            List<Product> productDTOs = new ArrayList<>();
+            List<Product> productDTOs = productService.getAllProducts();
 
-            // Apply filtering based on category
-            if (id != null) {
+            if (categoryId != null) {
+                FlowerType flowerType = FlowerType.values()[categoryId];
+                String category = flowerType.getDisplayName().toLowerCase();
+                System.out.println(category);
+
                 productDTOs = productDTOs.stream()
-                        .filter(product -> product.getCategory().equals(id))
+                        .filter(product -> product.getCategory().toLowerCase().equals(category))
                         .collect(Collectors.toList());
-            } else {
-                productDTOs = productService.getAllProducts();
             }
 
             // Apply filtering based on minimum price

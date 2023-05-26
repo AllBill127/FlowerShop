@@ -39,7 +39,7 @@ public class Product {
 
     public Product(String name, String category, String image, double price, int quantity, String description) {
         this.name = name;
-        this.category = name;
+        this.category = category;
         this.image = image;
         this.price = BigDecimal.valueOf(price);
         this.quantity = quantity;

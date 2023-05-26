@@ -3,11 +3,12 @@ package PSK.FlowerShop.interceptors;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
@@ -16,25 +17,25 @@ import java.time.format.DateTimeFormatter;
 
 @Aspect
 @Component
-@Scope(scopeName = "Application")
+@ApplicationScope
 public class MethodLogger {
+
+    static java.util.logging.Logger logger = java.util.logging.Logger.getLogger("Aspect Method Logger");
+
     private String logFilePath = null;
 
-    @Around("execution(* PSK.FlowerShop.security.JwtFilter..*.*(..)) && execution(* PSK.FlowerShop..*.*(..))")
-//    @Around("!execution(* PSK.FlowerShop.controller..*.*(..)) && execution(* PSK.FlowerShop.repository..*.*(..))")
+    @Around("!execution(* PSK.FlowerShop.security..*.*(..)) && execution(* PSK.FlowerShop..*.*(..))")
     public Object logMethodCall(ProceedingJoinPoint joinPoint) throws Throwable {
         String className = joinPoint.getSignature().getDeclaringTypeName();
         String methodName = joinPoint.getSignature().getName();
 
-        System.out.println("WE HERE 1 path:"+logFilePath);
         if (logFilePath == null) {
-            System.out.println("WE HERE 2 path:"+logFilePath);
             logFilePath = createLogFilePath();
             createNewLogFile(logFilePath);
+            logServerStart(logFilePath);
         }
 
         if(!className.equals("MethodLogger") && !methodName.equals("logToFile")) {
-            System.out.println("WE HERE 3 path:"+logFilePath);
             logToFile(this.logFilePath, className, methodName);
         }
 
@@ -54,6 +55,8 @@ public class MethodLogger {
             Path path = Path.of(logFilePath);
             Files.createDirectories(path.getParent());
             Files.createFile(path);
+        } catch (FileAlreadyExistsException e) {
+            logger.info("Log file already exists. Continue appending");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -65,6 +68,17 @@ public class MethodLogger {
 
         try (FileWriter writer = new FileWriter(logFilePath, true)) {
             writer.write(logMessage);
+            writer.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void logServerStart(String logFilePath) {
+        try (FileWriter writer = new FileWriter(logFilePath, true)) {
+            writer.write("\n============================\n" +
+                    " Flower Shop Server Started" +
+                    "\n============================\n");
             writer.flush();
         } catch (IOException e) {
             e.printStackTrace();

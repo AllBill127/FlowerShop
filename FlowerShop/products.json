@@ -37,7 +37,7 @@
       "name": "Rudens puokštė",
       "description": "Rudens spalvų puokštė su šiltomis atspalviais.",
       "price": 180,
-      "image": "/images/puokste.jpg",
+      "image": "/images/puokste2.jpg",
       "quantity": 100
     },
     {
@@ -47,7 +47,7 @@
       "name": "Kalanchoe",
       "description": "Maža, bet žavinga gėlė su spalvotais žiedais.",
       "price": 70,
-      "image": "/images/gele3.jpg",
+      "image": "/images/gele_3.jpg",
       "quantity": 100
     }
 ,
@@ -92,7 +92,7 @@
       "name": "Pavasario puokštė",
       "description": "Gyvos ir spalvingos pavasario gėlės sudaro šią puokštę.",
       "price": 150,
-      "image": "/images/puokste.jpg",
+      "image": "/images/puokste3.jpg",
       "quantity": 100
     }
 ,
@@ -103,7 +103,7 @@
       "name": "Žiemą žydintys augalai",
       "description": "Puokštė su žiemą žydinčiais augalais, kurie suteiks šilumos šaltuoju metų laiku.",
       "price": 180,
-      "image": "/images/puokste.jpg",
+      "image": "/images/puokste4.jpg",
       "quantity": 100
     }
 ,
@@ -127,8 +127,77 @@
       "price": 110,
       "image": "/images/gele3.jpg",
       "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef581",
+      "category": "puokste",
+      "reviews": [],
+      "name": "Puokštė",
+      "description": "Puokštė su žiemą žydinčiais augalais, kurie suteiks šilumos šaltuoju metų laiku.",
+      "price": 100,
+      "image": "/images/puokste.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef581",
+      "category": "puokste",
+      "reviews": [],
+      "name": "Nauja puokštė",
+      "description": "Puokštė su žiemą žydinčiais augalais, kurie suteiks šilumos šaltuoju metų laiku.",
+      "price": 100,
+      "image": "/images/puokste2.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef583",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Aguona",
+      "description": "Gražių spalvų hortenzija su elegantiškomis žiedynų formomis.",
+      "price": 110,
+      "image": "/images/gele_3.jpg",
+      "quantity": 100
+    },
+
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef583",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Gele",
+      "description": "Gražių spalvų hortenzija su elegantiškomis žiedynų formomis.",
+      "price": 110,
+      "image": "/images/gele_4.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef583",
+      "category": "gyvos geles",
+      "reviews": [],
+      "name": "Gele",
+      "description": "Gražių spalvų hortenzija su elegantiškomis žiedynų formomis.",
+      "price": 110,
+      "image": "/images/gele_5.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef573",
+      "category": "gele",
+      "reviews": [],
+      "name": "Gvazdikas",
+      "description": "Egzotiška orchidėja su išskirtinėmis formomis.",
+      "price": 150,
+      "image": "/images/gele_6.jpg",
+      "quantity": 100
+    },
+    {
+      "id": "086842f9-c216-463f-82ad-12084ceef573",
+      "category": "gele",
+      "reviews": [],
+      "name": "Tulpe",
+      "description": "Egzotiška orchidėja su išskirtinėmis formomis.",
+      "price": 150,
+      "image": "/images/gele_7.jpg",
+      "quantity": 100
     }
-
-
   ]
 }

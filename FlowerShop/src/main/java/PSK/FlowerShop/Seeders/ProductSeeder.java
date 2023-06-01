@@ -47,7 +47,7 @@ public class ProductSeeder {
     public ResponseEntity<?> seedProducts() {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            File file = new File("FlowerShop/products.json");
+            File file = new File("products.json");
 
             JsonNode rootNode = objectMapper.readTree(file);
             JsonNode productsNode = rootNode.get("products");

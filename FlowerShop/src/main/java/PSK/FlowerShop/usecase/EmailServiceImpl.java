@@ -1,6 +1,7 @@
 package PSK.FlowerShop.usecase;
 
 import PSK.FlowerShop.service.EmailService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -11,8 +12,11 @@ import java.util.Properties;
 
 @Service
 public class EmailServiceImpl implements EmailService {
-    final String username = "kingjustuxs@gmail.com";
-    final String password = "rylgxcezlnivlmxy";
+
+    @Value("${mail.user}")
+    private String username;
+    @Value("${mail.password}")
+    private String password;
 
 
     @Async

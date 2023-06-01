@@ -1,63 +1,154 @@
-2023-05-31T13:17:12.862+03:00  INFO 12024 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 12024 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
-2023-05-31T13:17:12.873+03:00  INFO 12024 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
-2023-05-31T13:17:14.667+03:00  INFO 12024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-05-31T13:17:14.894+03:00  INFO 12024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 6 JPA repository interfaces.
-2023-05-31T13:17:15.222+03:00  WARN 12024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
-2023-05-31T13:17:18.015+03:00  INFO 12024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-05-31T13:17:18.055+03:00  INFO 12024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-31T13:17:18.056+03:00  INFO 12024 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-05-31T13:17:18.322+03:00  INFO 12024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-31T13:17:18.323+03:00  INFO 12024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5320 ms
-2023-05-31T13:17:18.462+03:00  INFO 12024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-05-31T13:17:19.147+03:00  INFO 12024 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
-2023-05-31T13:17:19.152+03:00  INFO 12024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-05-31T13:17:19.178+03:00  INFO 12024 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
-2023-05-31T13:17:19.736+03:00  INFO 12024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-05-31T13:17:19.859+03:00  INFO 12024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
-2023-05-31T13:17:20.337+03:00  WARN 12024 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-05-31T13:17:20.863+03:00  INFO 12024 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-05-31T13:17:22.225+03:00  INFO 12024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-05-31T13:17:22.239+03:00  INFO 12024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-05-31T13:17:24.086+03:00  WARN 12024 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-05-31T13:17:25.125+03:00  INFO 12024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-31T13:17:25.141+03:00  INFO 12024 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 12.989 seconds (process running for 15.57)
-2023-05-31T13:17:44.577+03:00  INFO 12024 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-05-31T13:17:44.580+03:00  INFO 12024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-05-31T13:17:44.582+03:00  INFO 12024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-05-31T13:17:49.634+03:00  INFO 21412 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 21412 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
-2023-05-31T13:17:49.637+03:00  INFO 21412 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
-2023-05-31T13:17:50.292+03:00  INFO 21412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-05-31T13:17:50.349+03:00  INFO 21412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 6 JPA repository interfaces.
-2023-05-31T13:17:50.424+03:00  WARN 21412 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
-2023-05-31T13:17:51.027+03:00  INFO 21412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-05-31T13:17:51.036+03:00  INFO 21412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-31T13:17:51.036+03:00  INFO 21412 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-05-31T13:17:51.112+03:00  INFO 21412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-31T13:17:51.113+03:00  INFO 21412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1408 ms
-2023-05-31T13:17:51.147+03:00  INFO 21412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-05-31T13:17:51.426+03:00  INFO 21412 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
-2023-05-31T13:17:51.428+03:00  INFO 21412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-05-31T13:17:51.438+03:00  INFO 21412 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
-2023-05-31T13:17:51.645+03:00  INFO 21412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-05-31T13:17:51.750+03:00  INFO 21412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
-2023-05-31T13:17:51.937+03:00  WARN 21412 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-05-31T13:17:52.074+03:00  INFO 21412 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-05-31T13:17:52.928+03:00  INFO 21412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-05-31T13:17:52.937+03:00  INFO 21412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-05-31T13:17:53.254+03:00  INFO 21412 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
-2023-05-31T13:17:53.753+03:00  WARN 21412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-05-31T13:17:54.320+03:00  INFO 21412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-31T13:17:54.348+03:00  INFO 21412 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 5.152 seconds (process running for 5.87)
-2023-05-31T13:18:00.892+03:00  INFO 21412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-31T13:18:00.892+03:00  INFO 21412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-31T13:18:00.894+03:00  INFO 21412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-05-31T13:31:24.052+03:00  INFO 21412 --- [task-1] P.F.usecase.EmailServiceDecorator        : Sent email content:
-2023-05-31T13:31:24.058+03:00  INFO 21412 --- [task-1] P.F.usecase.EmailServiceDecorator        : Receiver: demo@gmail.com
-2023-05-31T13:31:24.058+03:00  INFO 21412 --- [task-1] P.F.usecase.EmailServiceDecorator        : Subject: Your order created
-2023-05-31T13:31:24.059+03:00  INFO 21412 --- [task-1] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order created</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
-We would like to inform you that your order has been created.</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/896daf81-c85b-4e4c-9855-50b46681ff71" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
-2023-05-31T13:31:24.059+03:00  INFO 21412 --- [task-1] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/896daf81-c85b-4e4c-9855-50b46681ff71
-2023-05-31T13:35:13.700+03:00 ERROR 21412 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2023-06-01T10:59:40.990+03:00  INFO 4548 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 4548 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T10:59:40.995+03:00  INFO 4548 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T10:59:42.024+03:00  INFO 4548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T10:59:42.092+03:00  INFO 4548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 6 JPA repository interfaces.
+2023-06-01T10:59:42.222+03:00  WARN 4548 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T10:59:44.513+03:00  INFO 4548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T10:59:44.533+03:00  INFO 4548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T10:59:44.534+03:00  INFO 4548 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T10:59:44.700+03:00  INFO 4548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T10:59:44.703+03:00  INFO 4548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3646 ms
+2023-06-01T10:59:44.848+03:00  INFO 4548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T10:59:45.124+03:00  INFO 4548 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T10:59:45.126+03:00  INFO 4548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T10:59:45.138+03:00  INFO 4548 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T10:59:45.356+03:00  INFO 4548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T10:59:45.444+03:00  INFO 4548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T10:59:45.646+03:00  WARN 4548 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T10:59:45.800+03:00  INFO 4548 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T10:59:46.746+03:00  INFO 4548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T10:59:46.754+03:00  INFO 4548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T10:59:47.712+03:00  WARN 4548 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T10:59:49.626+03:00  INFO 4548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T10:59:49.728+03:00  INFO 4548 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 9.327 seconds (process running for 10.935)
+2023-06-01T11:00:24.775+03:00  INFO 4548 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:00:24.776+03:00  INFO 4548 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:00:24.777+03:00  INFO 4548 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-01T11:01:28.549+03:00  INFO 4548 --- [task-1] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:01:28.550+03:00  INFO 4548 --- [task-1] P.F.usecase.EmailServiceDecorator        : Receiver: pegasas@yahoo.com
+2023-06-01T11:01:28.550+03:00  INFO 4548 --- [task-1] P.F.usecase.EmailServiceDecorator        : Subject: Your order created
+2023-06-01T11:01:28.550+03:00  INFO 4548 --- [task-1] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order created</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been created.</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/a44fd000-0c47-4f38-a836-6adc19cc553a" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:01:28.551+03:00  INFO 4548 --- [task-1] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/a44fd000-0c47-4f38-a836-6adc19cc553a
+2023-06-01T11:05:56.401+03:00  INFO 4548 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:05:56.425+03:00  INFO 4548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:05:56.481+03:00  INFO 4548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:06:02.436+03:00  INFO 11796 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 11796 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:06:02.439+03:00  INFO 11796 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:06:03.188+03:00  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:06:03.260+03:00  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:06:03.343+03:00  WARN 11796 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:06:03.969+03:00  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:06:03.978+03:00  INFO 11796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:06:03.979+03:00  INFO 11796 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:06:04.061+03:00  INFO 11796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:06:04.062+03:00  INFO 11796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1542 ms
+2023-06-01T11:06:04.101+03:00  INFO 11796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:06:04.355+03:00  INFO 11796 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:06:04.356+03:00  INFO 11796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:06:04.367+03:00  INFO 11796 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:06:04.584+03:00  INFO 11796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:06:04.647+03:00  INFO 11796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:06:04.830+03:00  WARN 11796 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:06:04.970+03:00  INFO 11796 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:06:05.863+03:00  INFO 11796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:06:05.874+03:00  INFO 11796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:06:06.180+03:00  INFO 11796 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:06:06.707+03:00  WARN 11796 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:06:07.292+03:00  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:06:07.298+03:00  INFO 11796 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 5.377 seconds (process running for 6.177)
+2023-06-01T11:06:16.380+03:00  INFO 11796 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:06:16.380+03:00  INFO 11796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:06:16.381+03:00  INFO 11796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-01T11:09:42.487+03:00  INFO 11796 --- [task-1] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:09:42.488+03:00  INFO 11796 --- [task-1] P.F.usecase.EmailServiceDecorator        : Receiver: null
+2023-06-01T11:09:42.488+03:00  INFO 11796 --- [task-1] P.F.usecase.EmailServiceDecorator        : Subject: Your order is DELIVERED
+2023-06-01T11:09:42.488+03:00  INFO 11796 --- [task-1] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order is DELIVERED</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been DELIVERED</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/a44fd000-0c47-4f38-a836-6adc19cc553a" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:09:42.488+03:00  INFO 11796 --- [task-1] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/a44fd000-0c47-4f38-a836-6adc19cc553a
+2023-06-01T11:09:42.516+03:00 ERROR 11796 --- [task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void PSK.FlowerShop.usecase.EmailServiceImpl.sendEmail(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+
+java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:793) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:752) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:729) ~[javax.mail-1.6.2.jar:1.6.2]
+	at PSK.FlowerShop.usecase.EmailServiceImpl.sendEmail(EmailServiceImpl.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.0.6.jar:6.0.6]
+	at PSK.FlowerShop.usecase.EmailServiceDecorator.decorateEmail(EmailServiceDecorator.java:54) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:631) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:621) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.0.6.jar:6.0.6]
+	at PSK.FlowerShop.interceptors.MethodLogger.logMethodCall(MethodLogger.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:631) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:621) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.6.jar:6.0.6]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-6.0.6.jar:6.0.6]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:10:40.774+03:00  INFO 11796 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:10:40.780+03:00  INFO 11796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:10:40.782+03:00  INFO 11796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:10:46.959+03:00  INFO 4496 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 4496 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:10:46.962+03:00  INFO 4496 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:10:47.712+03:00  INFO 4496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:10:47.772+03:00  INFO 4496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:10:47.852+03:00  WARN 4496 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:10:48.447+03:00  INFO 4496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:10:48.457+03:00  INFO 4496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:10:48.457+03:00  INFO 4496 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:10:48.541+03:00  INFO 4496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:10:48.541+03:00  INFO 4496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1510 ms
+2023-06-01T11:10:48.574+03:00  INFO 4496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:10:48.816+03:00  INFO 4496 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:10:48.817+03:00  INFO 4496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:10:48.827+03:00  INFO 4496 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:10:49.095+03:00  INFO 4496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:10:49.210+03:00  INFO 4496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:10:49.508+03:00  WARN 4496 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:10:49.995+03:00  INFO 4496 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:10:52.347+03:00  INFO 4496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:10:52.359+03:00  INFO 4496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:10:52.957+03:00  INFO 4496 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:10:54.387+03:00  WARN 4496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:10:55.604+03:00  INFO 4496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:10:55.623+03:00  INFO 4496 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 9.141 seconds (process running for 9.901)
+2023-06-01T11:11:09.825+03:00  INFO 4496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:11:09.826+03:00  INFO 4496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:11:09.829+03:00  INFO 4496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-01T11:11:55.349+03:00  INFO 4496 --- [task-1] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:11:55.349+03:00  INFO 4496 --- [task-1] P.F.usecase.EmailServiceDecorator        : Receiver: pegasas@yahoo.com
+2023-06-01T11:11:55.350+03:00  INFO 4496 --- [task-1] P.F.usecase.EmailServiceDecorator        : Subject: Your order created
+2023-06-01T11:11:55.350+03:00  INFO 4496 --- [task-1] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order created</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been created.</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/ecf32b3b-13b4-4c9b-8c02-816ef88eb797" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:11:55.350+03:00  INFO 4496 --- [task-1] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/ecf32b3b-13b4-4c9b-8c02-816ef88eb797
+2023-06-01T11:11:57.992+03:00  INFO 4496 --- [task-2] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:11:57.992+03:00  INFO 4496 --- [task-2] P.F.usecase.EmailServiceDecorator        : Receiver: pegasas@yahoo.com
+2023-06-01T11:11:57.993+03:00  INFO 4496 --- [task-2] P.F.usecase.EmailServiceDecorator        : Subject: Your order is DELIVERED
+2023-06-01T11:11:57.993+03:00  INFO 4496 --- [task-2] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order is DELIVERED</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been DELIVERED</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/ecf32b3b-13b4-4c9b-8c02-816ef88eb797" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:11:57.993+03:00  INFO 4496 --- [task-2] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/ecf32b3b-13b4-4c9b-8c02-816ef88eb797
+2023-06-01T11:13:20.922+03:00 ERROR 4496 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
 	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
@@ -99,10 +190,518 @@ io.jsonwebtoken.security.SignatureException: JWT signature does not match locall
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
 	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
 
-2023-05-31T13:35:13.700+03:00 ERROR 21412 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2023-06-01T11:13:20.962+03:00 ERROR 4496 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
 	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:13:24.049+03:00 ERROR 4496 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:13:24.067+03:00 ERROR 4496 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:23:24.870+03:00  INFO 4496 --- [task-3] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:23:24.875+03:00  INFO 4496 --- [task-3] P.F.usecase.EmailServiceDecorator        : Receiver: pegasas@yahoo.com
+2023-06-01T11:23:24.875+03:00  INFO 4496 --- [task-3] P.F.usecase.EmailServiceDecorator        : Subject: Your order created
+2023-06-01T11:23:24.876+03:00  INFO 4496 --- [task-3] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order created</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been created.</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/0b3e926e-a1b3-41ba-a166-4eac8561927c" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:23:24.876+03:00  INFO 4496 --- [task-3] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/0b3e926e-a1b3-41ba-a166-4eac8561927c
+2023-06-01T11:24:52.179+03:00  INFO 4496 --- [task-4] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:24:52.180+03:00  INFO 4496 --- [task-4] P.F.usecase.EmailServiceDecorator        : Receiver: pegasas@yahoo.com
+2023-06-01T11:24:52.180+03:00  INFO 4496 --- [task-4] P.F.usecase.EmailServiceDecorator        : Subject: Your order created
+2023-06-01T11:24:52.180+03:00  INFO 4496 --- [task-4] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order created</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been created.</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/b3b0d5e2-a427-41ee-b3c4-f89e8b871595" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:24:52.180+03:00  INFO 4496 --- [task-4] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/b3b0d5e2-a427-41ee-b3c4-f89e8b871595
+2023-06-01T11:24:54.809+03:00  INFO 4496 --- [task-5] P.F.usecase.EmailServiceDecorator        : Sent email content:
+2023-06-01T11:24:54.809+03:00  INFO 4496 --- [task-5] P.F.usecase.EmailServiceDecorator        : Receiver: pegasas@yahoo.com
+2023-06-01T11:24:54.809+03:00  INFO 4496 --- [task-5] P.F.usecase.EmailServiceDecorator        : Subject: Your order is CANCELED
+2023-06-01T11:24:54.809+03:00  INFO 4496 --- [task-5] P.F.usecase.EmailServiceDecorator        : Text: <html><head><style>body { font-family: Arial, sans-serif; }</style></head><body><h2 style="font-family: Arial, sans-serif;">Your order is CANCELED</h2><p style="font-size: 16px; line-height: 1.5;">Hello,
+We would like to inform you that your order has been CANCELED</p><p style="font-size: 16px; line-height: 1.5;"><a href="http://localhost:3000/order/b3b0d5e2-a427-41ee-b3c4-f89e8b871595" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">Click Here</a></p></body></html>
+2023-06-01T11:24:54.810+03:00  INFO 4496 --- [task-5] P.F.usecase.EmailServiceDecorator        : Link: http://localhost:3000/order/b3b0d5e2-a427-41ee-b3c4-f89e8b871595
+2023-06-01T11:33:24.975+03:00  INFO 4496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:33:25.021+03:00  INFO 4496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:33:25.032+03:00  INFO 4496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:33:31.829+03:00  INFO 12840 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 12840 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:33:31.831+03:00  INFO 12840 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:33:32.562+03:00  INFO 12840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:33:32.628+03:00  INFO 12840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:33:32.711+03:00  WARN 12840 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:33:33.315+03:00  INFO 12840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:33:33.325+03:00  INFO 12840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:33:33.325+03:00  INFO 12840 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:33:33.407+03:00  INFO 12840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:33:33.408+03:00  INFO 12840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
+2023-06-01T11:33:33.444+03:00  INFO 12840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:33:33.697+03:00  INFO 12840 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:33:33.699+03:00  INFO 12840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:33:33.708+03:00  INFO 12840 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:33:33.912+03:00  INFO 12840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:33:33.977+03:00  INFO 12840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:33:34.151+03:00  WARN 12840 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:33:34.292+03:00  INFO 12840 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:33:35.171+03:00  INFO 12840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:33:35.180+03:00  INFO 12840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:33:35.520+03:00  INFO 12840 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:33:36.100+03:00  WARN 12840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:33:36.683+03:00  INFO 12840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:33:36.691+03:00  INFO 12840 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 5.345 seconds (process running for 6.13)
+2023-06-01T11:33:50.856+03:00  INFO 12840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:33:50.856+03:00  INFO 12840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:33:50.857+03:00  INFO 12840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-01T11:33:50.909+03:00 ERROR 12840 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:33:51.007+03:00 ERROR 12840 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:41:23.976+03:00  INFO 12840 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:41:23.979+03:00  INFO 12840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:41:23.981+03:00  INFO 12840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:41:29.641+03:00  INFO 19364 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 19364 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:41:29.642+03:00  INFO 19364 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:41:30.295+03:00  INFO 19364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:41:30.357+03:00  INFO 19364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:41:30.434+03:00  WARN 19364 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:41:30.975+03:00  INFO 19364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:41:30.984+03:00  INFO 19364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:41:30.985+03:00  INFO 19364 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:41:31.064+03:00  INFO 19364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:41:31.065+03:00  INFO 19364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1368 ms
+2023-06-01T11:41:31.099+03:00  INFO 19364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:41:31.330+03:00  INFO 19364 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:41:31.332+03:00  INFO 19364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:41:31.342+03:00  INFO 19364 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:41:31.526+03:00  INFO 19364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:41:31.592+03:00  INFO 19364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:41:31.757+03:00  WARN 19364 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:41:31.899+03:00  INFO 19364 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:41:32.743+03:00  INFO 19364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:41:32.752+03:00  INFO 19364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:41:33.043+03:00  INFO 19364 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:41:33.545+03:00  WARN 19364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:41:34.066+03:00  INFO 19364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:41:34.074+03:00  INFO 19364 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 4.861 seconds (process running for 5.669)
+2023-06-01T11:41:47.304+03:00  INFO 19364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:41:47.306+03:00  INFO 19364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:41:47.313+03:00  INFO 19364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-06-01T11:44:12.257+03:00  INFO 19364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:44:12.260+03:00  INFO 19364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:44:12.262+03:00  INFO 19364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:44:17.807+03:00  INFO 19504 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 19504 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:44:17.809+03:00  INFO 19504 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:44:18.464+03:00  INFO 19504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:44:18.524+03:00  INFO 19504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:44:18.604+03:00  WARN 19504 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:44:19.165+03:00  INFO 19504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:44:19.174+03:00  INFO 19504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:44:19.174+03:00  INFO 19504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:44:19.255+03:00  INFO 19504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:44:19.255+03:00  INFO 19504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1383 ms
+2023-06-01T11:44:19.291+03:00  INFO 19504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:44:19.531+03:00  INFO 19504 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:44:19.533+03:00  INFO 19504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:44:19.543+03:00  INFO 19504 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:44:19.749+03:00  INFO 19504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:44:19.811+03:00  INFO 19504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:44:19.981+03:00  WARN 19504 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:44:20.124+03:00  INFO 19504 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:44:21.017+03:00  INFO 19504 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:44:21.025+03:00  INFO 19504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:44:21.344+03:00  INFO 19504 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:44:22.158+03:00  WARN 19504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:44:22.956+03:00  INFO 19504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:44:22.964+03:00  INFO 19504 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 5.578 seconds (process running for 6.377)
+2023-06-01T11:44:27.814+03:00  INFO 19504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:44:27.814+03:00  INFO 19504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:44:27.815+03:00  INFO 19504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-01T11:44:29.258+03:00 ERROR 19504 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:44:29.281+03:00 ERROR 19504 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:420) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T11:46:18.387+03:00  INFO 19504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:46:18.389+03:00  INFO 19504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:46:18.391+03:00  INFO 19504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:46:24.787+03:00  INFO 18592 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 18592 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:46:24.790+03:00  INFO 18592 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:46:25.459+03:00  INFO 18592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:46:25.525+03:00  INFO 18592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:46:25.609+03:00  WARN 18592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:46:26.201+03:00  INFO 18592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:46:26.209+03:00  INFO 18592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:46:26.209+03:00  INFO 18592 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:46:26.285+03:00  INFO 18592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:46:26.285+03:00  INFO 18592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
+2023-06-01T11:46:26.317+03:00  INFO 18592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:46:26.541+03:00  INFO 18592 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:46:26.543+03:00  INFO 18592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:46:26.553+03:00  INFO 18592 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:46:27.012+03:00  INFO 18592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:46:27.109+03:00  INFO 18592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:46:27.343+03:00  WARN 18592 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:46:27.512+03:00  INFO 18592 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:46:28.386+03:00  INFO 18592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:46:28.398+03:00  INFO 18592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:46:28.727+03:00  INFO 18592 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:46:29.211+03:00  WARN 18592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:46:29.737+03:00  INFO 18592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:46:29.743+03:00  INFO 18592 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 5.408 seconds (process running for 6.108)
+2023-06-01T11:46:35.507+03:00  INFO 18592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:46:35.509+03:00  INFO 18592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:46:35.512+03:00  INFO 18592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-01T11:47:59.372+03:00  INFO 18592 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:47:59.374+03:00  INFO 18592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-01T11:47:59.376+03:00  INFO 18592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-01T11:48:04.874+03:00  INFO 21556 --- [main] PSK.FlowerShop.FlowerShopApplication     : Starting FlowerShopApplication using Java 19.0.2 with PID 21556 (C:\Users\pegas\IdeaProjects\FlowerShoper\FlowerShop\target\classes started by pegas in C:\Users\pegas\IdeaProjects\FlowerShoper)
+2023-06-01T11:48:04.876+03:00  INFO 21556 --- [main] PSK.FlowerShop.FlowerShopApplication     : The following 1 profile is active: "production"
+2023-06-01T11:48:05.553+03:00  INFO 21556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-01T11:48:05.620+03:00  INFO 21556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+2023-06-01T11:48:05.698+03:00  WARN 21556 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[PSK.FlowerShop]' package. Please check your configuration.
+2023-06-01T11:48:06.247+03:00  INFO 21556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-01T11:48:06.256+03:00  INFO 21556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-01T11:48:06.256+03:00  INFO 21556 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-01T11:48:06.332+03:00  INFO 21556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-01T11:48:06.332+03:00  INFO 21556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1394 ms
+2023-06-01T11:48:06.365+03:00  INFO 21556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-01T11:48:06.571+03:00  INFO 21556 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-06-01T11:48:06.573+03:00  INFO 21556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-01T11:48:06.582+03:00  INFO 21556 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-ui'. Database available at 'jdbc:h2:~/test'
+2023-06-01T11:48:06.756+03:00  INFO 21556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-01T11:48:06.803+03:00  INFO 21556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.2.Final
+2023-06-01T11:48:06.939+03:00  WARN 21556 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-01T11:48:07.051+03:00  INFO 21556 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-01T11:48:07.845+03:00  INFO 21556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-01T11:48:07.855+03:00  INFO 21556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-01T11:48:08.373+03:00  INFO 21556 --- [main] Aspect Method Logger                     : Log file already exists. Continue appending
+2023-06-01T11:48:08.809+03:00  WARN 21556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-01T11:48:09.358+03:00  INFO 21556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-01T11:48:09.364+03:00  INFO 21556 --- [main] PSK.FlowerShop.FlowerShopApplication     : Started FlowerShopApplication in 4.896 seconds (process running for 5.56)
+2023-06-01T11:48:18.129+03:00  INFO 21556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01T11:48:18.130+03:00  INFO 21556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-01T11:48:18.131+03:00  INFO 21556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-01T11:52:04.730+03:00  INFO 21556 --- [http-nio-8080-exec-10] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-01T11:54:16.822+03:00  INFO 21556 --- [http-nio-8080-exec-8] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-01T12:29:25.522+03:00  WARN 21556 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: undefined]
+2023-06-01T12:29:25.678+03:00  WARN 21556 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: undefined]
+2023-06-01T13:36:53.002+03:00 ERROR 21556 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-06-01T10:25:56Z. Current time: 2023-06-01T10:36:52Z, a difference of 656895 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:448) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]
+	at PSK.FlowerShop.security.JwtUtil.extractClaims(JwtUtil.java:49) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtUtil.validateToken(JwtUtil.java:41) ~[classes/:na]
+	at PSK.FlowerShop.security.JwtFilter.doFilterInternal(JwtFilter.java:32) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-06-01T13:36:53.272+03:00 ERROR 21556 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-06-01T10:25:56Z. Current time: 2023-06-01T10:36:53Z, a difference of 657271 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:448) ~[jjwt-impl-0.11.2.jar:0.11.2]
 	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550) ~[jjwt-impl-0.11.2.jar:0.11.2]
 	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610) ~[jjwt-impl-0.11.2.jar:0.11.2]
 	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.2.jar:0.11.2]

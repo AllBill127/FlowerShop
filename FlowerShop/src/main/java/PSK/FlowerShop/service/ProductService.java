@@ -9,6 +9,7 @@ import PSK.FlowerShop.request.ProductDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.RequestScope;
 
 import java.util.Collections;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
+@RequestScope
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
@@ -85,7 +87,8 @@ public class ProductService {
             ));
 
         Product product = currentProduct.get();
-
+        //System.out.println(product.getVersion());
+        //Thread.sleep(10000);
         product.setCategory(productDTO.getCategory());
         product.setName(productDTO.getName());
         product.setDescription(productDTO.getDescription());

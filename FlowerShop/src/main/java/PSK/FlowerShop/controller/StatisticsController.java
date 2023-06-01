@@ -5,11 +5,15 @@ import PSK.FlowerShop.usecase.IStatistics;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.annotation.RequestScope;
 
 import java.time.LocalDate;
 
 @RestController
 @RequestMapping("/statistics")
+@CrossOrigin(origins = "http://localhost:3000")
+@RequestScope
+
 public class StatisticsController {
     private final IStatistics statisticsCalculator;
 

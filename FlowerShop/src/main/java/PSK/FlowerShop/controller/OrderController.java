@@ -12,12 +12,16 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.annotation.RequestScope;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/orders")
+@CrossOrigin(origins = "http://localhost:3000")
+@RequestScope
 
 public class OrderController {
     @Autowired
@@ -31,7 +35,9 @@ public class OrderController {
 
     @GetMapping
     public List<Order> getAllOrders() {
-        return orderService.getAllOrders();
+        List<Order> allOrders= orderService.getAllOrders();
+        Collections.reverse( allOrders);
+        return allOrders;
     }
 
     @GetMapping("/{id}")
@@ -61,6 +67,8 @@ public class OrderController {
     }
     @PostMapping  ("/{id}")
     public Order changeOrderStatus(@PathVariable UUID id,  @RequestBody OrderRequest order) {
+        Order order1 =  orderService.changeOrderStatus(order.getId(), order.getStatus());
+        emailService.sendEmail(order1.getEmail(),"Your order is "+order1.getStatus(), "Hello,\nWe would like to inform you that your order has been "+order1.getStatus(),"http://localhost:3000/order/"+id);
         return orderService.changeOrderStatus(order.getId(), order.getStatus());
     }
 
